@@ -54,9 +54,9 @@
                     $("#img").html(`<img src="${data.sprites.front_default}" >`);
                     $('#altura').html(`${data.height * 10} cm.`);
                     $('#peso').html(`${data.weight /10}kg.`);
-                  
+                    $("#tipo_pkm").html("<p></p>");
                     for (let i = 0; i < data.types.length; i++) {
-                    $('#tipo_pkm').append(`<li>${data.types[i].type.name}</li>`);
+                        $('#tipo_pkm').append(`<li>${data.types[i].type.name}</li>`);
                     } 
                     
                 });
